@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:root@ac-yekohv5-shard-00-00.1mzjjso.mongodb.net:27017,ac-yekohv5-shard-00-01.1mzjjso.mongodb.net:27017,ac-yekohv5-shard-00-02.1mzjjso.mongodb.net:27017/?ssl=true&replicaSet=atlas-m0k5qe-shard-0&authSource=admin&retryWrites=true&w=majority
+      database: energy
+logging:
+  level:
+    org:
+      springframework:
+        data:
+          mongodb:
+            core:
+              MongoTemplate: DEBUG
